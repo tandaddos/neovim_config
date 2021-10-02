@@ -1,0 +1,65 @@
+{
+    // python
+    "python.pythonPath": "python",
+    "python.venvPath": "~/bin/venvs/",
+	
+	// jedi
+    "python.jediPath": "~/bin/venvs/jedi/lib/python3.9.2/site-packages/",
+    "python.jediEnabled": true,
+    "suggest.timeout": 5000,
+
+	//formatting
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "~/bin/venvs/black/bin/black",
+
+	//linting
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.pylintPath": "~/bin/venvs/pylint/bin/pylint",
+
+  "languageserver": {
+    "clojure-lsp": {
+      "command": "bash",
+	"args": ["-c", "clojure-lsp"],
+	"filetypes": ["clojure"],
+	"rootPatterns": ["project.clj"],
+	"additionalSchemes": ["jar", "zipfile"],
+	"trace.server": "verbose",
+	"initializationOptions": {
+	}
+    }
+  },
+
+   "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json"],
+      "initializationOptions": {
+         "cache": {
+           "directory": "/tmp/ccls"
+         },
+         "client": {
+          "snippetSupport": true
+         }
+       }
+    }
+  },
+
+  "initializationOptions": {
+  	// ...
+  	// This will re-index the file on buffer change which is definitely a performance hit. See if it works for you
+  	"index": {
+    	"onChange": true
+  	},
+  	// This is mandatory!
+  	"highlight": { "lsRanges" : true }
+	},
+
+
+
+}
+
+
+
