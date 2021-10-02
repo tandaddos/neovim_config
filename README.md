@@ -1,4 +1,4 @@
 # neovim_config
 configuration for neovim
 
-git clone and put the directory under ~/.config/
+git clone https://github.com/tandaddos/neovim_config.git ~/.config/
