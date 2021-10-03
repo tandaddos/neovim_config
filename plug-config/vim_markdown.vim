@@ -30,3 +30,15 @@ let g:vim_markdown_json_frontmatter = 1  " for JSON format
 "    Command
 "        Toc: create a vertical window of table of contents
 "        TableFormat: format the table under current cursor
+"
+"   The following commands are useful to open and close folds:
+"
+"    zr: reduces fold level throughout the buffer
+"    zR: opens all folds
+"    zm: increases fold level throughout the buffer
+"    zM: folds everything all the way
+"    za: open a fold your cursor is on
+"    zA: open a fold your cursor is on recursively
+"    zc: close a fold your cursor is on
+"    zC: close a fold your cursor is on recursively
+
