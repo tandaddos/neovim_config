@@ -95,4 +95,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Plug 'nvim-treesitter/nvim-treesitter', { 'do': 'TSUpdate' }
 
+    Plug 'will133/vim-dirdiff'
     call plug#end()
